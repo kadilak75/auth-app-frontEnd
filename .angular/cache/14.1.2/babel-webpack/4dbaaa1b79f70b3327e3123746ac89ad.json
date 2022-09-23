@@ -1,0 +1,1 @@
+{"ast":null,"code":"module.exports = exports = ConsoleSpecFilter;\n\nfunction ConsoleSpecFilter(options) {\n  var filterString = options && options.filterString;\n  var filterPattern = new RegExp(filterString);\n\n  this.matches = function (specName) {\n    return filterPattern.test(specName);\n  };\n}","map":null,"metadata":{},"sourceType":"script"}
